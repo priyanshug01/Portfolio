@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Otomanopee One', sans-serif;
+}
+header{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(to left, rgb(248, 245, 236) 40%, rgb(89, 223, 96));
+}
+.navsection{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to top ,rgb(55, 55, 55) 10%,rgb(64, 62, 63) 30%);
+}
+.logo{
+    width: 30%;
+    color: rgb(235, 222, 222);
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+.logo h1{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    animation: frontback 1.5s infinite;
+    animation-direction: alternate;
+}
+@keyframes frontback{
+    from{
+        padding-left: 40px;
+    }
+    to{
+        padding-right: 50px;
+    }
+}
+nav{
+    width: 50%;
+    justify-content: space-around;
+    display: flex;
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:rgb(249, 241, 255);
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+}
+nav a::before{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-bottom: 2px solid #f5f7ff;
+    transition: all 0.4s linear;
+}
+nav a:hover::before{
+    width: 100%;
+}
+main{
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rightside img{
+    max-width: 450px;
+    height: auto;
+}
+.leftside{
+    color: rgb(163, 30, 30);
+    text-transform: uppercase;
+}
+.leftside h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+    position: relative;
+}
+footer {
+    background-color: #FFF;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+.fa-facebook{
+    color: rgb(35, 85, 221);
+    font-size: 20px;
+    text-decoration: none;
+}
+.fa-instagram{
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    text-decoration: none;
+}
+.fa-twitter{
+    color: rgb(0, 247, 255);
+    font-size: 20px;
+    text-decoration: none;
+}
